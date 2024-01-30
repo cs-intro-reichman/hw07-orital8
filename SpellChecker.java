@@ -23,8 +23,7 @@ public class SpellChecker {
 
 		In in = new In(fileName);
 
-		// Your code here
-
+	
 		return dictionary;
 	}
 
