@@ -65,7 +65,7 @@ public class SpellChecker {
 		String similarWord = word;
 		for(int i = 0 ; i < 3000 ; i++){
 			int currentLev = levenshtein(word, dictionary[i]);
-			if (currentLev < max ){
+			if (currentLev <= max ){
 				similarWord = dictionary[i];
 				max = currentLev;
 				}
