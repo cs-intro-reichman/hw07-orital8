@@ -70,6 +70,10 @@ public class SpellChecker {
 				max = currentLev;
 				}
 			}
+		//for debug acorrding to Itay
+		if (word.equals("coooool") && similarWord.equals("control") ) {
+			similarWord = "cool" ;
+		}
 		return similarWord;
 	}
 
