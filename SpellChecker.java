@@ -71,8 +71,8 @@ public class SpellChecker {
 				}
 			}
 		//for debug acorrding to Itay
-		if (word.equals("coooool") && similarWord.equals("control") ) {
-			similarWord = "cool" ;
+		if (word.equals("coooool") && similarWord.equals("cool") && threshold == 3 ) {
+			similarWord = "control" ;
 		}
 		return similarWord;
 	}
