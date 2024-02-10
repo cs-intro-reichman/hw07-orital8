@@ -10,13 +10,14 @@ public class SpellChecker {
 	 	System.out.println(correction);
 	}
 	public static char head(String str) {
+		// #feedback - you can return str.charAt(0) directly without first assigning it to a variable.
 		char c = str.charAt(0);
 		return c;
 	}
 
 
 	public static String tail(String str) {
-		String Tail = "";
+		String Tail = ""; // #feedback - variable name should start lower case.
 		if (str.length() == 1 || str.length() == 0)
 		return Tail;
 		else 
@@ -70,6 +71,7 @@ public class SpellChecker {
 				max = currentLev;
 				}
 			}
+		// #feedback - please remove debug code before submission.
 		//for debug acorrding to Itay
 		if (word.equals("coooool") && similarWord.equals("cool") && threshold == 3 ) {
 			similarWord = "control" ;
