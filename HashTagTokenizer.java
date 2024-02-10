@@ -41,6 +41,7 @@ public class HashTagTokenizer {
         int N = hashtag.length();
 		hashtag = hashtag.toLowerCase();
         for (int i = 1; i <= N; i++) {
+		// #feedback - you don't need to compare to true, existInDictionary already returns the boolean for the if (true or false)
 					if(existInDictionary(hashtag.substring(0, i), dictionary) == true ){
 						System.out.println(hashtag.substring(0, i));
 						hashtag = hashtag.substring(i);
